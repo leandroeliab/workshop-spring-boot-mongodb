@@ -1,8 +1,11 @@
 package com.leandromiranda.workshopmongo.domain;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.io.Serializable;
 import java.util.Objects;
 
+@Document(collection = "users")
 public class User implements Serializable {
 
     private String Id;
